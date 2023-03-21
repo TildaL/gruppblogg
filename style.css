@@ -43,15 +43,17 @@ a {
     overflow-x: hidden;
 }
 .container-main-content {
-    /* max-width: 100vw; */
     margin: 1em;
 }
 
 article {
-    /* max-width: 100vw; */
-    /* width: 100px; */
     border-bottom: 1px solid rgb(165, 163, 163);
-    padding-bottom: 2em;
+    padding: 1em;
+}
+
+.recept-img {
+    width: 90%;
+    margin: 0 auto;
 }
 
 button {
