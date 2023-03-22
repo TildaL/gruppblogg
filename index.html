@@ -19,41 +19,43 @@
     <div class="container-whole-page">
         <header>
             <nav>
-                <div><img src="images/SOS.png" alt=""></div>
-                <div>
-                    <a href="#">Home</a>
-                    <a href="#">Archive</a>
-                    <a href="#">About us</a>
-                    <a href="#">Categories</a>
-                </div>
+                <div><img src="images/SOS.png" alt="Kvadratisk ikon med texten Söder om stan"></div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Archive</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Categories</a></li>
+                </ul>
             </nav>
         </header>
-        <div class="container-main-content">
-            <main>
+        <div class="container-main-and-aside">
+            <main class="main">
                 <article>
-                    <h3>Smarrig rubrik för recept</h3>
-                    <p class="recept-info"><img class="icon" src="images/fePot0.png">4 portioner <img class="icon"
-                            src="images/timer_icon.png"> 45 min</p>
-                    <img class="recept-img" src="images/dish.png" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam obcaecati nam, harum cumque vitae
-                        repellendus dolores. Temporibus, itaque soluta fugiat nisi ipsum in aliquid iure nulla
-                        perferendis amet accusamus consectetur.</p>
-                    <button>Läs mer</button>
+                    <h2>Laxlåda med aubergine</h2>
+                    <p class="recipe-info"><img class="recipe-icon" src="images/icon-pot.png">4 portioner <img
+                            class="recipe-icon" src="images/icon-timer.png"> 45 min</p>
+                    <img class="recipe-img" src="images/dish.png" alt="">
+                    <p class="recipe-preview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam obcaecati
+                        nam, harum cumque vitae repellendus dolores. Temporibus, itaque soluta fugiat nisi ipsum in
+                        aliquid iure nulla perferendis amet accusamus consectetur.</p>
+                    <button class="recipe-btn">Läs mer</button>
                 </article>
                 <article>
-                    <h3>Smarrig rubrik för recept</h3>
-                    <p class="recept-info"><img class="icon" src="images/fePot0.png">4 portioner <img class="icon"
-                            src="images/timer_icon.png"> 45 min</p>
-                    <img class="recept-img" src="images/salmon.png" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam obcaecati nam, harum cumque vitae
-                        repellendus dolores. Temporibus, itaque soluta fugiat nisi ipsum in aliquid iure nulla
-                        perferendis amet accusamus consectetur.</p>
-                    <button>Läs mer</button>
+                    <h2>Enkel LCHF-lax</h2>
+                    <p class="recipe-info"><img class="recipe-icon" src="images/icon-pot.png">4 portioner <img
+                            class="recipe-icon" src="images/icon-timer.png"> 45 min</p>
+                    <img class="recipe-img" src="images/salmon.png" alt="">
+                    <p class="recipe-preview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam obcaecati
+                        nam, harum cumque vitae repellendus dolores. Temporibus, itaque soluta fugiat nisi ipsum in
+                        aliquid iure nulla perferendis amet accusamus consectetur.</p>
+                    <button class="recipe-btn">Läs mer</button>
                 </article>
             </main>
             <aside class="sidebar">
-                <img id="restaurant-icon" src="images/restaurant_icon.png" alt="">
-                <p id="text-icon">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quo totam sit?</p>
+                <div class="blogg-intro">
+                    <img src="images/restaurant_icon.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quo totam sit?</p>
+                </div>
                 <div class="container-aside-lists">
                     <ul>
                         <li>
@@ -95,7 +97,6 @@
                     </ul>
                 </div>
             </aside>
-
         </div>
         <footer>
             <ul class="footer-info">
@@ -117,7 +118,6 @@
                     <li><i class="fa-brands fa-square-instagram"></i></li>
                 </div>
             </ul>
-
         </footer>
     </div>
 </body>
