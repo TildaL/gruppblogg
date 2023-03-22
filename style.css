@@ -16,24 +16,24 @@ body {
 
 /* --- Typography --- */
 
-h3{
+h3 {
     font-family: 'Antonio', sans-serif;
     text-transform: uppercase;
 }
 
 ul li {
-   list-style-type: none;
+    list-style-type: none;
 }
 
 /* --- Layout --- */
 
 /* Header */
 
-header{
+header {
     background-image: url(images/bread_background_sodertugg.png);
     background-size: cover;
     background-position: center;
-    height:40em;
+    height: 40em;
 }
 
 a {
@@ -46,6 +46,7 @@ a {
     width: 100vw;
     overflow-x: hidden;
 }
+
 .container-main-content {
     margin: 1em;
 }
@@ -75,8 +76,8 @@ button {
 
 .icon {
     height: 1em;
-    margin-left:.3em;
-    margin-right:.3em;
+    margin-left: .3em;
+    margin-right: .3em;
 }
 
 /* Sidebar */
@@ -87,7 +88,7 @@ button {
 }
 
 
-.container-aside-lists{
+.container-aside-lists {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -100,7 +101,7 @@ ul {
     margin-bottom: 1em;
 }
 
-footer{
+footer {
     background-color: #1E1F21;
     color: #fff;
     display: flex;
@@ -113,19 +114,18 @@ footer{
     width: 42%;
 }
 
-ul h4{
+ul h4 {
     margin-bottom: .4em;
 }
 
 @media (min-width: 550px) {
-    .container-main-content {
+    main {
         display: grid;
         grid-template-columns: 3fr 7fr;
     }
 
     .blog-posts {
-        grid-column-start: 2;
+        grid-column-start: col-start 2;
     }
 
 }
-
