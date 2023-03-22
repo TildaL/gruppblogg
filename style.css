@@ -21,11 +21,13 @@ h3{
     text-transform: uppercase;
 }
 
- ul li {
+ul li {
    list-style-type: none;
 }
 
 /* --- Layout --- */
+
+/* Header */
 
 header{
     background-image: url(images/bread_background_sodertugg.png);
@@ -37,6 +39,8 @@ header{
 a {
     color: white;
 }
+
+/* Main */
 
 .container-whole-page {
     width: 100vw;
@@ -69,16 +73,59 @@ button {
     border: none;
 }
 
-.icon{
+.icon {
     height: 1em;
     margin-left:.3em;
     margin-right:.3em;
 }
 
-footer{
-    background-color: #1E1F21;
-    color: #fff;
+/* Sidebar */
+
+#restaurant-icon,
+#text-icon {
+    display: none;
 }
 
 
+.container-aside-lists{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+ul {
+    width: 50%;
+    margin-bottom: 1em;
+}
+
+footer{
+    background-color: #1E1F21;
+    color: #fff;
+    display: flex;
+    padding: 2em;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 42%;
+}
+
+ul h4{
+    margin-bottom: .4em;
+}
+
+@media (min-width: 550px) {
+    .container-main-content {
+        display: grid;
+        grid-template-columns: 3fr 7fr;
+    }
+
+    .blog-posts {
+        grid-column-start: 2;
+    }
+
+}
 
