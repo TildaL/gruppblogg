@@ -125,7 +125,7 @@ ul h4 {
     }
 
     .blog-posts {
-        grid-column-start: col-start 2;
+        grid-column-start: 2;
     }
 
 }
