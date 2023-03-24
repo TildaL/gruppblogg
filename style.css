@@ -122,12 +122,17 @@ ul h4 {
 /* Desktop version */
 
 @media (min-width: 550px) {
+<<<<<<< HEAD
 .container-main-and-aside {
+=======
+    .container-main-and-aside {
+>>>>>>> 25a70321a2e6a93b1a7247187b299f365a46a14d
         display: grid;
         grid-template-columns: 3fr 7fr;
     }
 
     .main {
+<<<<<<< HEAD
         grid-column: 2/3;
     }
 
@@ -147,4 +152,23 @@ ul h4 {
 
 
 
+=======
+        grid-column-start: 2;
+    }
+
+    .sidebar {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    .container-aside-lists {
+        display: block;
+    }
+
+    .blogg-intro {
+        display: block;
+        margin: 1em;
+        width: 70%;
+    }
+>>>>>>> 25a70321a2e6a93b1a7247187b299f365a46a14d
 }
