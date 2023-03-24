@@ -122,13 +122,29 @@ ul h4 {
 /* Desktop version */
 
 @media (min-width: 550px) {
-    main {
+.container-main-and-aside {
         display: grid;
         grid-template-columns: 3fr 7fr;
     }
 
-    .blog-posts {
-        grid-column-start: 2;
+    .main {
+        grid-column: 2/3;
     }
+
+    .sidebar {
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+
+    /* .blog-intro {
+        display: flex;
+        grid-column:1/2;
+    }
+
+    .container-aside-lists {
+        grid-column: ;
+    } */
+
+
 
 }
