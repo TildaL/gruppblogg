@@ -114,13 +114,28 @@ Detta kanske behövs för att Tilda inte ska få en side-scroll:
 }
 
 .main {
-    border-bottom: 1px solid rgb(165, 163, 163);
     padding: 1em;
+}
+
+article {
+    border-bottom: 1px solid rgb(165, 163, 163);
+    padding-bottom: .5em;
 }
 
 .recipe-img,
 .recipe-preview {
     width: 90%;
+}
+
+.recipe-title2 {
+    margin-top: 1em;
+}
+
+.recipe-title,
+.recipe-info,
+.recipe-preview,
+.recipe-btn {
+    margin-bottom: .5em;
 }
 
 .recipe-btn {
@@ -133,6 +148,8 @@ Detta kanske behövs för att Tilda inte ska få en side-scroll:
     padding: 5px 42px;
     border-radius: 5px;
     border: none;
+    margin-top: .5em;
+   
 }
 
 .recipe-icon {
@@ -205,5 +222,9 @@ ul h4 {
         display: block;
         margin: 1em;
         width: 70%;
+    }
+
+    .nav-list-home{
+        display: inline;
     }
 }
