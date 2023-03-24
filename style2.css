@@ -28,15 +28,76 @@ ul li {
 
 /* Header */
 
+/*
 header {
     background-image: url(images/bread_background_sodertugg.png);
     background-size: cover;
     background-position: center;
     height: 40em;
-}
+}*/
 
 a {
     color: white;
+    text-decoration: none;
+}
+
+.nav-container {
+    background-color: #212224;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2em;
+}
+
+.nav-list > a {
+    padding:.3em;
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+
+.nav-list-home{
+    display: none;
+}
+
+.nav-icon {
+    width: 40px;
+    /* padding:.3em; */
+}
+
+.nav-icon-link{
+    padding-top: .2em;
+    padding-left:.2em;
+}
+
+/* Grid version för naven */
+
+/* .nav-container {
+    background-color: #212224;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    align-items: center;
+}
+
+.nav-icon {
+    padding-left: .5em;
+    width: 100px;
+    grid-column-start: 1;
+}
+
+.nav-list {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 10px;
+    font-size: 20px;
+    justify-self: end;
+    padding-right: 2em;
+} */
+
+
+
+
+.brodbild {
+    width: 100vw;
 }
 
 /* Main */
@@ -121,19 +182,18 @@ ul h4 {
 
 /* Desktop version */
 
-@media (min-width: 550px) 
-{
+@media (min-width: 550px) {
     .container-main-and-aside {
         display: grid;
         grid-template-columns: 3fr 7fr;
     }
 
     .main {
-        grid-column: 2/3;
+        grid-column-start: 2;
     }
 
     .sidebar {
-        grid-column: 1/2;
+        grid-column-start: 1;
         grid-row-start: 1;
     }
 

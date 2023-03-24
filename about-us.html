@@ -20,12 +20,12 @@
         <header>
             <div>
                 <nav class="nav-container">
-                    <a class="nav-icon-link" href="#"><img class="nav-icon" src="images/SOS.png" alt="Kvadratisk ikon med texten Söder om stan"></a>
+                    <a href="#"><img class="nav-icon" src="images/SOS.png" alt="Kvadratisk ikon med texten Söder om stan"></a>
                     <div class="nav-list">
-                        <a class="nav-list-home" href="index.html">Home</a>
+                        <a href="index.html">Home</a>
                         <a href="#">Archive</a>
-                        <a href="about-us.html">About us</a>
-                        <a class='nav-list-categories' href="#">Categories</a>
+                        <a href="#">About us</a>
+                        <a href="#">Categories</a>
                     </div>
                 </nav>
             </div>
@@ -33,26 +33,7 @@
         </header>
         <div class="container-main-and-aside">
             <main class="main">
-                <article>
-                    <h2>Laxlåda med aubergine</h2>
-                    <p class="recipe-info"><img class="recipe-icon" src="images/icon-pot.png">4 portioner <img
-                            class="recipe-icon" src="images/icon-timer.png"> 45 min</p>
-                    <img class="recipe-img" src="images/dish.png" alt="">
-                    <p class="recipe-preview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam obcaecati
-                        nam, harum cumque vitae repellendus dolores. Temporibus, itaque soluta fugiat nisi ipsum in
-                        aliquid iure nulla perferendis amet accusamus consectetur.</p>
-                    <button class="recipe-btn">Läs mer</button>
-                </article>
-                <article>
-                    <h2>Enkel LCHF-lax</h2>
-                    <p class="recipe-info"><img class="recipe-icon" src="images/icon-pot.png">4 portioner <img
-                            class="recipe-icon" src="images/icon-timer.png"> 45 min</p>
-                    <img class="recipe-img" src="images/salmon.png" alt="">
-                    <p class="recipe-preview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam obcaecati
-                        nam, harum cumque vitae repellendus dolores. Temporibus, itaque soluta fugiat nisi ipsum in
-                        aliquid iure nulla perferendis amet accusamus consectetur.</p>
-                    <button class="recipe-btn">Läs mer</button>
-                </article>
+
             </main>
             <aside class="sidebar">
                 <div class="blogg-intro">
@@ -166,7 +147,7 @@ css
 .navBar {
     overflow: hidden;
     display: flex;
-   
+
     width: 70%;
     height: 70px;
     justify-content: flex-end;
@@ -189,10 +170,10 @@ css
     float: left;
     overflow: hidden;
   }
-  
+
   .dropdown .dropbtn {
     cursor: pointer;
-    font-size: 16px;  
+    font-size: 16px;
     border: none;
     outline: none;
     color: white;
@@ -201,11 +182,11 @@ css
     font-family: inherit;
     margin: 0;
   }
-  
+
   .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
     background-color: rgb(56, 56, 56);
   }
-  
+
   .dropdown-content {
     display: none;
     position: absolute;
@@ -214,7 +195,7 @@ css
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1000;
   }
-  
+
   .dropdown-content a {
     float: none;
     color: white;
@@ -223,11 +204,11 @@ css
     display: block;
     text-align: center;
   }
-  
+
   .dropdown-content a:hover {
     background-color:rgb(80, 80, 80)
   }
-  
+
   .show {
     display: block;
   }
@@ -239,8 +220,6 @@ css
     z-index: 1;
     height: 70px;
     align-items: center;
-    
-   
 }
 .mobileMenuLogo {
     max-height: 60px;
@@ -252,7 +231,7 @@ css
     justify-content: center;
     align-items: center;
     z-index: -1;
-    width: auto;     
+    width: auto;
 }
 js
 
@@ -260,7 +239,6 @@ js
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
-  
   // menyknapp stäng om utanför
   window.onclick = function(e) {
     if (!e.target.matches('.dropbtn')) {
