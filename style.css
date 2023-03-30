@@ -15,6 +15,17 @@ body {
 
 /* --- Typography --- */
 
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 8rem;
+    letter-spacing: .1em;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    padding: 0.5em;
+    display: none;
+}
+
 h2,
 h3 {
     font-family: 'Antonio', sans-serif;
@@ -34,24 +45,29 @@ img:not(.nav-icon) {
 
 /* Header */
 
-
-a {
-    color: white;
-    text-decoration: none;
+header {
+    background-color: #212224;
 }
+
 
 .nav-container {
     background-color: #212224;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     padding-right: 2em;
+    padding-bottom: 1em;
 }
 
 .nav-list>a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
     padding: .3em;
-    font-size: .8rem;
-    text-transform: uppercase;
+    font-variant: all-small-caps;
+    letter-spacing: .1em;
 }
 
 .nav-list-home {
@@ -59,19 +75,13 @@ a {
 }
 
 .nav-icon {
-    width: 40px;
+    width: 120px;
     /* padding:.3em; */
 }
 
 .nav-icon-link {
     padding-top: .2em;
     padding-left: .2em;
-}
-
-
-.brodbild {
-    width: 100vw;
-    display: none;
 }
 
 /* Main */
@@ -84,7 +94,7 @@ Detta kanske behövs för att Tilda inte ska få en side-scroll:
 } */
 
 .container-main-and-aside {
-    margin: 1em .25em;
+    margin: 1em .5em;
 }
 
 .main {
@@ -208,9 +218,11 @@ ul h4 {
 
 /* Forms */
 
+
 .form h3 {
     text-align: center;
     margin-bottom: 1em;
+    margin-top: 3em;
 }
 
 .form p {
@@ -237,7 +249,9 @@ ul h4 {
     display: block;
 }
 
-
+.form-btn {
+    margin-top: .5em;
+}
 
 /* Desktop version */
 
