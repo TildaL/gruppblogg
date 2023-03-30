@@ -15,15 +15,21 @@ body {
 
 /* --- Typography --- */
 
-h2 {
+h2,
+h3 {
     font-family: 'Antonio', sans-serif;
     text-transform: uppercase;
 }
 
 /* --- Layout --- */
 
+
 ul li {
     list-style-type: none;
+}
+
+img:not(.nav-icon) {
+    border-radius: 4px;
 }
 
 /* Header */
@@ -42,13 +48,13 @@ a {
     padding-right: 2em;
 }
 
-.nav-list > a {
-    padding:.3em;
+.nav-list>a {
+    padding: .3em;
     font-size: .8rem;
     text-transform: uppercase;
 }
 
-.nav-list-home{
+.nav-list-home {
     display: none;
 }
 
@@ -57,14 +63,15 @@ a {
     /* padding:.3em; */
 }
 
-.nav-icon-link{
+.nav-icon-link {
     padding-top: .2em;
-    padding-left:.2em;
+    padding-left: .2em;
 }
 
 
 .brodbild {
     width: 100vw;
+    display: none;
 }
 
 /* Main */
@@ -87,6 +94,7 @@ Detta kanske behövs för att Tilda inte ska få en side-scroll:
 article {
     border-bottom: 1px solid rgb(165, 163, 163);
     padding-bottom: .5em;
+    margin-bottom: 2em;
 }
 
 .recipe-img,
@@ -94,29 +102,44 @@ article {
     width: 100%;
 }
 
-.recipe-title2 {
-    margin-top: 1em;
-}
-
 .recipe-title,
 .recipe-info,
 .recipe-preview,
 .recipe-btn {
     margin-bottom: .5em;
+    margin-top: .5em;
+}
+
+.recipe-info {
+    margin-bottom: 2em;
 }
 
 .recipe-btn {
+    margin-bottom: 1em;
+    margin-top: .5em;
+}
+
+.recipe-title,
+.recipe-info {
+    text-align: center;
+}
+
+.container-recipe-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.standard-btn {
     font-family: 'Source Sans Pro', sans-serif;
     text-transform: uppercase;
     font-variant-caps: small-caps;
     letter-spacing: 1px;
-    background-color: black;
+    background-color: #212224;
     color: white;
-    padding: 5px 42px;
-    border-radius: 5px;
+    padding: 12px;
+    border-radius: 6px;
     border: none;
-    margin-top: .5em;
-   
+    width: 100%;
 }
 
 .recipe-icon {
@@ -137,10 +160,8 @@ article {
     justify-content: space-between;
     padding: 1em;
     margin-top: 1em;
-    
+
 }
-
-
 
 ul {
     width: 50%;
@@ -169,7 +190,8 @@ ul h4 {
 
 /* --- About us --- */
 
-.img-about-us, .about-us-text {
+.img-about-us,
+.about-us-text {
     width: 100%;
 }
 
@@ -184,12 +206,47 @@ ul h4 {
     margin-bottom: 1em;
 }
 
+/* Forms */
+
+.form h3 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.form p {
+    margin-bottom: 0.5em;
+}
+
+.container-input-fields input,
+.container-input-fields textarea {
+    width: 100%;
+    padding: .5em;
+    margin-bottom: 0.5em;
+}
+
+.container-input-fields label {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #454545;
+    text-transform: uppercase;
+    font-variant: all-small-caps;
+}
+
+.container-input-fields>* {
+    display: block;
+}
+
+
+
 /* Desktop version */
 
-@media (min-width: 550px) {
+@media (min-width: 650px) {
     .container-main-and-aside {
         display: grid;
         grid-template-columns: 2fr 8fr;
+        max-width: 1000px;
+        margin: 0 auto;
     }
 
     .main {
@@ -210,7 +267,7 @@ ul h4 {
     }
 
     .blogg-intro-text,
-    .container-aside-lists{
+    .container-aside-lists {
         margin-left: 1.5em;
     }
 
@@ -219,7 +276,11 @@ ul h4 {
         margin: 1em;
     }
 
-    .nav-list-home{
+    .nav-list-home {
         display: inline;
+    }
+
+    article {
+        margin-right: 2em;
     }
 }
