@@ -32,10 +32,27 @@ h3 {
     text-transform: uppercase;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 ul li {
     list-style-type: none;
 }
 
+.standard-btn {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    font-variant-caps: small-caps;
+    letter-spacing: 1px;
+    background-color: #212224;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    width: 100%;
+}
 
 /* --- Layout --- */
 
@@ -48,9 +65,10 @@ ul li {
 
 header {
     background-color: #212224;
+    margin-bottom: 2em;
 }
 
-.container-nav {
+.container-header-nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -58,7 +76,13 @@ header {
     padding-bottom: 1em;
 }
 
-.nav-list>a {
+.header-nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-nav a {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
@@ -90,18 +114,12 @@ header {
     display: none;
 }
 
-.nav-list-home {
+.header-nav-home {
     display: none;
 }
 
-/* Main */
 
-/*
-Detta kanske behövs för att Tilda inte ska få en side-scroll:
- .container-whole-page {
-    width: 100vw;
-    overflow-x: hidden;
-} */
+/* Main */
 
 .container-main-and-aside {
     margin: 1em .5em;
@@ -111,7 +129,7 @@ Detta kanske behövs för att Tilda inte ska få en side-scroll:
     padding: .2em;
 }
 
-article {
+.recipe-article {
     border-bottom: 1px solid rgb(165, 163, 163);
     padding-bottom: .5em;
     margin-bottom: 2em;
@@ -126,17 +144,7 @@ article {
 .recipe-info,
 .recipe-preview,
 .recipe-btn {
-    margin-bottom: .5em;
-    margin-top: .5em;
-}
-
-.recipe-info {
-    margin-bottom: 2em;
-}
-
-.recipe-btn {
-    margin-bottom: 1em;
-    margin-top: .5em;
+    margin: .5em 0;
 }
 
 .recipe-title,
@@ -144,22 +152,8 @@ article {
     text-align: center;
 }
 
-.container-recipe-btn {
-    display: flex;
-    justify-content: center;
-}
-
-.standard-btn {
-    font-family: 'Source Sans Pro', sans-serif;
-    text-transform: uppercase;
-    font-variant-caps: small-caps;
-    letter-spacing: 1px;
-    background-color: #212224;
-    color: white;
-    padding: 12px;
-    border-radius: 6px;
-    border: none;
-    width: 100%;
+.recipe-info {
+    margin-bottom: 2em;
 }
 
 .recipe-icon {
@@ -168,19 +162,29 @@ article {
     margin-right: .3em;
 }
 
+.recipe-btn {
+    margin-bottom: 1em;
+    margin-top: .5em;
+}
+
+.container-recipe-btn {
+    display: flex;
+    justify-content: center;
+}
+
+
 /* Sidebar */
 
 .blogg-intro {
     display: none;
 }
 
-.container-aside-lists {
+.aside-nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1em;
     margin-top: 1em;
-
 }
 
 ul {
@@ -268,14 +272,14 @@ ul h4 {
 /* Desktop version */
 
 @media (min-width: 650px) {
-    .container-nav {
+    .container-header-nav {
         flex-direction: row;
         align-items: center;
         padding-left: 2em;
         padding-top: 1em;
     }
 
-    .nav-list-home {
+    .header-nav-home {
         display: block;
     }
 
@@ -307,7 +311,7 @@ ul h4 {
         grid-row-start: 1;
     }
 
-    .container-aside-lists {
+    .aside-nav {
         display: block;
         /* display: flex;
         flex-direction: column;
@@ -315,7 +319,7 @@ ul h4 {
     }
 
     .blogg-intro-text,
-    .container-aside-lists {
+    .aside-nav {
         margin-left: 1.5em;
     }
 
@@ -324,11 +328,11 @@ ul h4 {
         margin: 1em;
     }
 
-    .nav-list-home {
+    .header-nav-home {
         display: inline;
     }
 
-    article {
+    .recipe-article {
         margin-right: 2em;
     }
 }

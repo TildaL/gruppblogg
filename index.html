@@ -24,24 +24,26 @@
 <body>
     <div class="container-whole-page">
         <header>
-            <div class="container-nav">
+            <div class="container-header-nav">
                 <a class="nav-home-link" href="index.html">
                     <h1 class="title-mobile">Södertugg</h1>
                     <img class="nav-logo" src="images/sodertugg-logo.png"
                          alt="Rektangulär ikon med texten Södertugg">
                 </a>
-                <nav class="nav-list">
-                    <a class="nav-list-home" href="index.html">Home</a>
-                    <a href="#">Archive</a>
-                    <a href="about-us.html">About us</a>
-                    <a class='nav-list-categories' href="#">Categories</a>
+                <nav class="header-nav">
+                    <ul>
+                        <li><a class="header-nav-home" href="index.html">Hem</a></li>
+                        <li><a href="#">Arkiv</a></li>
+                        <li><a href="about-us.html">Om oss</a></li>
+                        <li><a href="#">Utforska</a></li>
+                    </ul>
                 </nav>
             </div>
             <h1 class="title-desktop">Södertugg</h1>
         </header>
         <div class="container-main-and-aside">
             <main class="main">
-                <article>
+                <article class="recipe-article">
                     <h2 class="recipe-title">Hot tapas</h2>
                     <p class="recipe-info">
                         <img class="recipe-icon" src="images/icon-pot.png">4 portioner
@@ -56,7 +58,7 @@
                         <button class="standard-btn recipe-btn">Läs mer</button>
                     </div>
                 </article>
-                <article>
+                <article class="recipe-article">
                     <h2 class="recipe-title">Enkel LCHF-lax</h2>
                     <p class="recipe-info"><img class="recipe-icon" src="images/icon-pot.png">4 portioner <img
                             class="recipe-icon" src="images/icon-timer.png"> 45 min</p>
@@ -79,46 +81,37 @@
                         dolor soluta!
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ad.</p>
                 </div>
-                <div class="container-aside-lists">
+                <nav class="aside-nav">
                     <ul>
-                        <li>
-                            <h4>Latests posts</h4>
-                        </li>
-                        <li>STEAMY CHICKEN</li>
-                        <li>SPICY BEAN SOUP</li>
-                        <li>CHEESECAKE</li>
-                        <li>MMMMUFFIN</li>
+                        <li><h4>Senaste inlägg</h4></li>
+                        <li><a href="#">Kycklinggryta</a></li>
+                        <li><a href="#">Mustig böngryta</a></li>
+                        <li><a href="#">Cheesy ostkaka</a></li>
+                        <li><a href="#">Mmmuffin</a></li>
                     </ul>
                     <ul>
-                        <li>
-                            <h4>Categories</h4>
-                        </li>
-                        <li>VEGAN</li>
-                        <li>GLUTEN FREE</li>
-                        <li>FISH</li>
-                        <li>HOLIDAYS</li>
-                        <li>
-                            < 30 MIN</li>
+                        <li><h4>Utforska</h4></li>
+                        <li><a href="#">Veganskt</a></li>
+                        <li><a href="#">Gluten-fritt</a></li>
+                        <li><a href="#">Fisk</a></li>
+                        <li><a href="#">Högtider</a></li>
+                        <li><a href="#">Under 30 min</a></li>
                     </ul>
                     <ul>
-                        <li>
-                            <h4>Popular</h4>
-                        </li>
-                        <li>Cheesecake</li>
-                        <li>Sugar free dream cupcakes</li>
-                        <li>Easy salmon pasta</li>
-                        <li>Top 10 midnight snacks</li>
+                        <li><h4>Mest lästa</h4></li>
+                        <li><a href="#">Cheesy ostkaka</a></li>
+                        <li><a href="#">Sockerfria cupcakes</a></li>
+                        <li><a href="#">Lättlagad lax-pasta</a></li>
+                        <li><a href="#">Top 10 snacks</a></li>
                     </ul>
                     <ul>
-                        <li>
-                            <h4>Archive</h4>
-                        </li>
-                        <li>April 2023</li>
-                        <li>March 2023</li>
-                        <li>February 2023</li>
-                        <li>Janurary 2023</li>
+                        <li><h4>Arkiv</h4></li>
+                        <li><a href="#">April 2023</a></li>
+                        <li><a href="#">Mars 2023</a></li>
+                        <li><a href="#">Februari 2023</a></li>
+                        <li><a href="#">Januari 2023</a></li>
                     </ul>
-                </div>
+                </nav>
             </aside>
         </div>
         <footer>
