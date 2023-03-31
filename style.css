@@ -202,6 +202,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 1em;
+    margin-top: 2em;
 }
 
 .footer-nav-info {
@@ -209,10 +210,7 @@ header {
     flex-direction: column;
 }
 
-.footer-nav-info li a {
-}
-
-.newsletter {
+.news {
     margin-top: 1em;
 }
 
@@ -346,4 +344,5 @@ header {
     .recipe-article {
         margin-right: 2em;
     }
+
 }
